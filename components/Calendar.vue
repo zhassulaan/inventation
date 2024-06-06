@@ -34,7 +34,7 @@ import '../assets/styles/calendar.scss';
 library.add(faHeart);
 
 const weekdayNames = ref(['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']);
-const activeDay = ref(12);
+const activeDay = ref(27);
 const date = ref(new Date());
 const firstDay = ref(new Date(date.value.getFullYear(), 7, 1));
 const lastDay = ref(new Date(date.value.getFullYear(), 7 + 1, 0));

@@ -1,7 +1,9 @@
 <template>
-  <div id="info" class="home-content info">
-    <h2 class="home-content__title">Құрметті қонақтар!</h2>
-    <p class="home-content__description">Сіз(дер)ді қоныс тойымызға арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
-    <img src="@/assets/images/family.png" alt="Family icon" class="home-content__icon" />
+  <div id="about" class="about">
+    <p class="about-text">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жарандар, әріптестер!</p>
+    <p class="about-text">Сіз(дер)ді балаларымыз</p>
+    <h1>Жасулан</h1>
+    <h1>Дильназ</h1>
+    <p class="about-text">үйлену тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
   </div>
 </template>

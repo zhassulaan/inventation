@@ -4,27 +4,11 @@
     <div class="about-content">
       <Counter
         v-if="hydrated"
-        :time="countdown.days"
-        label="күн"
-        :image="costume"
-      />
-      <Counter
-        v-if="hydrated"
-        :time="countdown.hours"
-        label="сағат"
-        :image="rings"
-      />
-      <Counter
-        v-if="hydrated"
-        :time="countdown.minutes"
-        label="минут"
-        :image="dress"
-      />
-      <Counter
-        v-if="hydrated"
-        :time="countdown.seconds"
-        label="секунд"
-        :image="shoes"
+        v-for="(item, idx) in data"
+        :key="idx"
+        :time="item.time"
+        :label="item.label"
+        :image="item.image"
       />
     </div>
   </div>
@@ -41,6 +25,25 @@ import shoes from '@/assets/images/shoes.jpg'
 const targetDate = new Date('2024-07-27T19:00:00');
 const countdown = ref(getTimeDifference(targetDate));
 const hydrated = ref(false);
+const data = [
+  {
+    time: countdown.days,
+    label: 'күн',
+    image: costume
+  }, {
+    time: countdown.hours,
+    label: 'сағат',
+    image: rings
+  }, {
+    time: countdown.minutes,
+    label: 'минут',
+    image: dress
+  }, {
+    time: countdown.seconds,
+    label: 'секунд',
+    image: shoes
+  }
+];
 
 onMounted(() => {
   hydrated.value = true;

@@ -2,8 +2,8 @@
   <div class="counter">
     <img :src="image" alt="Counter image" />
     <div class="counter-countdown">
-      <h3 class="counter-countdown__time">{{ time }}</h3>
-      <p class="counter-countdown__label">{{ label }}</p>
+      <span class="counter-countdown__time">{{ time }}</span>
+      <span class="counter-countdown__label">{{ label }}</span>
     </div>
   </div>
 </template>
@@ -28,16 +28,25 @@ defineProps({
   &::after {
     @include origin;
     @include background;
+    background-color: var(--clr-black);
   }
   &-countdown {
     position: absolute;
     bottom: 0;
     @include center;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
     &__time,
     &__label {
       text-align: center;
       color: var(--clr-white);
+    }
+    &__time {
+      font-size: 32px;
+    }
+    &__label {
+      font-size: 20px;
     }
   }
 }

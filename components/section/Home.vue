@@ -8,7 +8,7 @@
     <h3 class="home-subtitle">27.07.2024</h3>
 
     <div class="home-image">
-      <img src="@/assets/images/IMG_0134.jpg" alt="Main image" />
+      <img src="@/assets/images/IMG_0655.jpg" alt="Main image" />
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@
     color: var(--clr-white);
   }
   &-title {
-    width: 60vw;
+    width: 320px;
     #zh {
       text-align: left;
     }
@@ -54,9 +54,8 @@
       content: "";
       width: calc(100vw - 28px);
       height: calc(100vh - 28px);
-      border: 1.5px solid var(--clr-red);
+      border: 1.5px solid var(--clr-border);
       border-radius: 12px;
-      opacity: .5;
     }
   }
 }

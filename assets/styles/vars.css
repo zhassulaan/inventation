@@ -1,8 +1,6 @@
 :root {
   --clr-white: #FFF;
   --clr-black: #000;
-  --clr-green: #85AB7B;;
-  --clr-grey: #B1B1B1;
-  --clr-red: #C12727;
-  --clr-gold: #BCA48D;
+  --clr-primary: #444043;
+  --clr-border: #8E7978;
 }

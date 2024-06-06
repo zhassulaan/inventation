@@ -9,6 +9,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@mixin center_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @mixin background {
   content: "";
   width: 100%;

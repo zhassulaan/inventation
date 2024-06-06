@@ -8,9 +8,6 @@
       <section-about />
     </Container>
     <Container>
-      <section-info />
-    </Container>
-    <Container>
       <section-time />
     </Container>
     <Container>

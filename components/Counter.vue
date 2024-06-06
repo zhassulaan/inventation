@@ -22,7 +22,8 @@ defineProps({
 
 .counter {
   position: relative;
-  width: 22%;
+  width: 23%;
+  height: 160px;
   border-radius: 16px;
   overflow: hidden;
   &::after {
@@ -43,10 +44,10 @@ defineProps({
       color: var(--clr-white);
     }
     &__time {
-      font-size: 32px;
+      font-size: 28px;
     }
     &__label {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 }

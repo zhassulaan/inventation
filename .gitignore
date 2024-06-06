@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+dist/
+
+# Logs
+logs
+*.log
+
+# Build output
+dist/
+build/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="about">
-    <p class="about-text">Құрметті қонақтар!</p>
+    <h4>Құрметті қонақтар!</h4>
     <p class="about-text">Сіз(дер)ді балаларымыз</p>
     <div>
       <h3>Жасұлан</h3>
@@ -19,5 +19,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  &-text {
+    font-size: 18px;
+  }
 }
 </style>

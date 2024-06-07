@@ -13,5 +13,8 @@
   height: 100vh;
   scroll-snap-align: start;
   padding: 0 32px;
+  &:first-child {
+    scroll-snap-align: start;
+  }
 }
 </style>

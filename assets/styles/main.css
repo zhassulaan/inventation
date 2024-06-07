@@ -15,12 +15,13 @@
 }
 
 html, body {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -31,10 +32,6 @@ img {
   height: 100%;
 }
 
-h2, h3, h4 ,h5, h6, p, span {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-}
 
 h1 {
   font-family: "Great Vibes", cursive;

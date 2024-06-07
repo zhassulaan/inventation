@@ -17,7 +17,6 @@ defineProps({
 </script>
 
 <style scoped lang="scss">
-@use "@/assets/styles/vars" as *;
 @use "@/assets/styles/mixins" as *;
 
 .counter {

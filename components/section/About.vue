@@ -18,7 +18,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 22px;
   &-text {
     font-size: 18px;
   }

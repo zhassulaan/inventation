@@ -2,10 +2,9 @@
 @import '@/assets/styles/header.scss';
 @import '@/assets/styles/home.scss';
 @import '@/assets/styles/vars.css';
-@import '@/assets/styles/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 *,
 ::after,
@@ -32,17 +31,13 @@ img {
   height: 100%;
 }
 
-h1, h2, h4, h5, h6 {
-  font-family: "Great Vibes", cursive;
-}
-
 p, span {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
 }
 
-h1, h6 {
-  font-weight: 600;
+h1, h4 {
+  font-family: "Great Vibes", cursive;
 }
 
 h1 {
@@ -56,17 +51,20 @@ h1 {
 } */
 
 h3 {
+  font-size:hpx;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Lora", serif;
+}
+
+h4 {
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 12px;
 }
 
-/* h4 {
-  font-size: 16px;
-  font-weight: 500;
-}
 
-h6 {
+/*h6 {
   font-size: 16px;
 } */
 

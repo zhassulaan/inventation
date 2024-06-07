@@ -5,11 +5,12 @@
     <h3>Жасұлан</h3>
     <h3>Дильназ</h3>
     <p class="about-text">үйлену тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
+    <Album />
   </div>
 </template>
 
 <style scoped lang="scss">
 .about {
-
+  position: relative;
 }
 </style>

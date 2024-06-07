@@ -49,6 +49,7 @@ defineProps({
 .vue-flux {
   position: relative;
   border-radius: 16px;
+  height: 360px;
   overflow: hidden;
   .flux-transition {
     position: absolute;

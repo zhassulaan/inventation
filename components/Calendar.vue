@@ -32,7 +32,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import '../assets/styles/calendar.scss';
 
 library.add(faHeart);
 
@@ -41,8 +40,6 @@ const activeDay = ref(27);
 const date = ref(new Date());
 const firstDay = ref(new Date(date.value.getFullYear(), 6, 1));
 const lastDay = ref(new Date(date.value.getFullYear(), 6 + 1, 0));
-console.log(firstDay);
-console.log(lastDay);
 const daysCount = ref(lastDay.value.getDate());
 const firstDayOfWeek = ref(firstDay.value.getDay());
 

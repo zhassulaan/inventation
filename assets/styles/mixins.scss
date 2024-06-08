@@ -21,3 +21,13 @@
   opacity: .3;
   background-color: var(--clr-black);
 }
+@mixin container_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+@mixin border_rad {
+  border-radius: 16px;
+  overflow: hidden;
+}

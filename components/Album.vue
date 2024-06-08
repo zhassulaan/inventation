@@ -16,7 +16,10 @@
 
 <script setup>
 import { VueFlux, FluxPreloader, FluxControls, Img, Fade, Kenburn } from 'vue-flux';
-import imge from '@/assets/images/IMG_0655.jpg';
+import image1 from '@/assets/images/IMG_0688.jpeg';
+import image2 from '@/assets/images/IMG_0689.jpeg';
+import image3 from '@/assets/images/IMG_0690.jpeg';
+import image4 from '@/assets/images/IMG_0691.jpeg';
 
 const options = reactive({
 	allowFullscreen: false,
@@ -31,26 +34,25 @@ const options = reactive({
 	lazyLoadAfter: 3,
 });
 const rscs = shallowReactive([
-	new Img(imge),
-	new Img(imge),
-	new Img(imge),
+	new Img(image1),
+	new Img(image2),
+	new Img(image3),
+	new Img(image4)
 ]);
 const transitions = shallowReactive([
   Fade,
   Kenburn,
 ]);
-
-defineProps({
-  images: Array
-});
 </script>
 
 <style lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .vue-flux {
   position: relative;
-  border-radius: 16px;
-  height: 360px;
-  overflow: hidden;
+  width: 220px;
+  height: 280px;
+  @include border_rad;
   .flux-transition {
     position: absolute;
   }

@@ -14,11 +14,11 @@
 </template>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .about {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  @include container_inner;
   &-text {
     font-size: 18px;
   }

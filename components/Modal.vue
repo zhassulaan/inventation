@@ -25,9 +25,9 @@ function closeModal() {
 
 <style scoped lang="scss">
 .modal {
-  position: absolute;
+  position: fixed;
 	top: 0;
-	left: -6.8%;
+	left: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 3;

@@ -1,6 +1,6 @@
 @import '@/assets/styles/header.scss';
-@import '@/assets/styles/home.scss';
 @import '@/assets/styles/vars.css';
+@import '@/assets/styles/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -42,16 +42,23 @@ h1 {
   font-weight: 400;
 } */
 
+h3, h5 {
+  font-style: italic;
+  font-weight: 500;
+}
+
 h3 {
   font-size: 28px;
-  font-weight: 500;
-  font-style: italic;
 }
 
 h4 {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 6px;
+}
+
+h5 {
+  font-size: 22px;
 }
 
 h6 {
@@ -73,3 +80,18 @@ a {
 .input_error {
   border: 1px solid var(--clr-red);
 }
+
+.main {
+	scroll-snap-align: center;
+	text-align: center;
+}
+.main-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .65;
+  z-index: -1;
+}
+

@@ -3,12 +3,12 @@
     <Countdown />
     <div>
       <h4>Той салтанаты:</h4>
-      <h3>27 шілде 2024</h3>
+      <h5>27 шілде 2024</h5>
     </div>
     <Calendar />
     <div>
       <h4>Басталу уақыты:</h4>
-      <h3 class="time-date">19:00</h3>
+      <h5 class="time-date">19:00</h5>
     </div>
   </div>
 </template>
@@ -37,10 +37,10 @@
       background-color: var(--clr-primary)
     }
     &::before {
-      left: -120%;
+      left: -150%;
     }
     &::after {
-      right: -120%;
+      right: -150%;
     }
   }
 }

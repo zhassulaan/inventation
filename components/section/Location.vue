@@ -1,9 +1,13 @@
 <template>
   <div id="location" class="location">
-    <h4 class="location-title">Мекен жайымыз:</h4>
-    <h3 class="location-subtitle">"Той сарайы" мейрамханасы, Атырау қ.</h3>
-    <img src="@/assets/images/2gis.png" alt="Map" class="location-icon" />
-    <Map />
+    <h4>Мекен жайымыз:</h4>
+    <h5 class="location-title"><span>"Той сарайы"</span> мейрамханасы, Атырау қ.</h5>
+    <a href="https://go.2gis.com/h727u">
+      <img src="@/assets/images/2gis.png" alt="Map" class="location-icon" />
+    </a>
+    <a href="https://go.2gis.com/h727u">
+      <Map />
+    </a>
   </div>
 </template>
 
@@ -12,6 +16,9 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  &-title span {
+    text-decoration: underline;
+  }
   &-icon {
     width: 64px;
     height: 64px;

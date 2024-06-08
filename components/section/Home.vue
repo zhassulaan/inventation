@@ -8,7 +8,7 @@
     <h3 class="home-subtitle">27.07.2024</h3>
 
     <div class="home-image">
-      <img src="@/assets/images/IMG_0655.jpg" alt="Main image" />
+      <img src="@/assets/images/IMG_0655.jpeg" alt="Main image" />
     </div>
   </div>
 </template>

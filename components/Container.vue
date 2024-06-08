@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="item">
     <slot></slot>
   </section>
 </template>
@@ -7,14 +7,10 @@
 <style scoped lang="scss">
 @use "@/assets/styles/mixins" as *;
 
-.container {
+.item {
   @include center_block;
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
   padding: 0 32px;
-  &:first-child {
-    scroll-snap-align: start;
-  }
 }
 </style>

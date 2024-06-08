@@ -1,7 +1,7 @@
 <template>
   <div id="map" class="map">
     <iframe
-      src="https://yandex.com/map-widget/v1/?um=constructor%3A615f5ca637044f46cb3bb8a5d615e63f8b19e465b49ff2a6ee810fc3a85167fd&amp;source=constructor"
+      src="https://yandex.com/map-widget/v1/?um=constructor%3Aca50b3c85b2ed186bd1c553263db892ef7da3549df1fd10941c354ee1af004f0&amp;source=constructor"
       width="100%"
       height="100%"
       frameborder="0"
@@ -12,9 +12,10 @@
 
 <style scoped>
 .map {
-	width: calc(100% - 2px);
-	height: 35.975vh;
-	border: 1px solid var(--clr-grey);
-	margin-top: 4.175vh;
+	width: calc(100% - 4px);
+	height: 25vh;
+	border: 2px solid var(--clr-border);
+  border-radius: 16px;
+  overflow: hidden;
 }
 </style>

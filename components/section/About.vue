@@ -8,7 +8,6 @@
       <h3>Дильназдың</h3>
     </div>
     <p class="about-text">үйлену тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
-    <img src="@/assets/images/flowers.png" alt="Flowers" />
     <Album />
   </div>
 </template>

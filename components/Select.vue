@@ -44,7 +44,7 @@ function selectItem(item) {
     &__input:after,
     &__input:checked:after {
       position: relative;
-      content: '';
+      content: "";
       bottom: -2px;
       left: -2px;
       display: inline-block;

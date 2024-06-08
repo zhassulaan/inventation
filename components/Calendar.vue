@@ -28,14 +28,14 @@
 </template>
 
 <script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 library.add(faHeart);
 
-const weekdayNames = ref(['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']);
+const weekdayNames = ref(["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]);
 const activeDay = ref(27);
 const date = ref(new Date());
 const firstDay = ref(new Date(date.value.getFullYear(), 6, 1));
@@ -47,7 +47,7 @@ const calendar = computed(() => {
   const weeks = [];
   let week = [];
   for (let i = 1; i < firstDayOfWeek.value; i++) {
-    week.push('');
+    week.push("");
   }
   for (let day = 1; day <= daysCount.value; day++) {
     if (week.length === 7) {

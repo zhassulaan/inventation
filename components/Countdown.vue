@@ -28,14 +28,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-import { getTimeDifference } from '@/utils/date';
-import costume from '@/assets/images/costume.jpg'
-import rings from '@/assets/images/rings.jpg'
-import dress from '@/assets/images/dress.jpg'
-import shoes from '@/assets/images/shoes.jpg'
+import { ref, onMounted, onUnmounted } from "vue";
+import { getTimeDifference } from "@/utils/date";
+import costume from "@/assets/images/costume.jpg"
+import rings from "@/assets/images/rings.jpg"
+import dress from "@/assets/images/dress.jpg"
+import shoes from "@/assets/images/shoes.jpg"
 
-const targetDate = new Date('2024-07-27T19:00:00');
+const targetDate = new Date("2024-07-27T19:00:00");
 const countdown = ref(getTimeDifference(targetDate));
 const hydrated = ref(false);
 

@@ -15,11 +15,11 @@
 </template>
 
 <script setup>
-import { VueFlux, FluxPreloader, FluxControls, Img, Fade, Kenburn } from 'vue-flux';
-import image1 from '@/assets/images/IMG_0688.jpeg';
-import image2 from '@/assets/images/IMG_0689.jpeg';
-import image3 from '@/assets/images/IMG_0690.jpeg';
-import image4 from '@/assets/images/IMG_0691.jpeg';
+import { VueFlux, FluxPreloader, FluxControls, Img, Fade, Kenburn } from "vue-flux";
+import image1 from "@/assets/images/IMG_0688.jpeg";
+import image2 from "@/assets/images/IMG_0689.jpeg";
+import image3 from "@/assets/images/IMG_0690.jpeg";
+import image4 from "@/assets/images/IMG_0691.jpeg";
 
 const options = reactive({
 	allowFullscreen: false,

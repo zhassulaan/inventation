@@ -47,7 +47,7 @@
 			transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
 			&::before,
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				width: 10px;
 				height: 10px;
@@ -68,7 +68,7 @@
 			&::before,
 			&::after {
 				position: absolute;
-				content: '';
+				content: "";
 				top: 50%;
 				width: 3px;
 				height: 16px;
@@ -104,7 +104,7 @@
 			transform: translateY(-50%);
 			&::before,
 			&::after {
-				content: '';
+				content: "";
 			}
 			&::before {
 				top: -8px;

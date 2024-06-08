@@ -19,7 +19,7 @@ defineProps({
 const emit = defineEmits(["closeModal"]);
 
 function closeModal() {
-  emit('closeModal');
+  emit("closeModal");
 };
 </script>
 
@@ -82,7 +82,7 @@ function closeModal() {
 				transform: rotate(45deg);
 				&::before,
 				&::after {
-					content: '';
+					content: "";
 				}
 				&::before {
 					top: -8px;

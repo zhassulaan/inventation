@@ -50,7 +50,7 @@
       @include background;
     }
     &::after {
-      content: '';
+      content: "";
       width: calc(100vw - 28px);
       height: calc(100vh - 28px);
       border: 1.5px solid var(--clr-border);

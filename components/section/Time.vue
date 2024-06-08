@@ -29,7 +29,7 @@
     &::before,
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       transform: translateY(-50%);
       width: 64px;

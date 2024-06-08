@@ -28,50 +28,50 @@
 </template>
 
 <script setup>
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
-const firstName = ref('');
-const secondName = ref('');
+const firstName = ref("");
+const secondName = ref("");
 const visit = ref(null);
-const error = ref('');
-const message = ref('');
+const error = ref("");
+const message = ref("");
 const modal = ref(false);
 const visitOptions = [
-  { id: 'yes', text: 'Иә, әрине' },
-  { id: 'no', text: 'Өкінішке орай келе алмаймын' }
+  { id: "yes", text: "Иә, әрине" },
+  { id: "no", text: "Өкінішке орай келе алмаймын" }
 ];
 
 function setVisit(option) {
   visit.value = option;
 }
 function submit() {
-  if (firstName.value === '' || secondName.value === '' || !visit.value) {
-    error.value = 'Барлығын дұрыстап толтырыңыз';
+  if (firstName.value === "" || secondName.value === "" || !visit.value) {
+    error.value = "Барлығын дұрыстап толтырыңыз";
     modal.value = true;
   } else {
-    error.value = '';
-    message.value = 'Форма сәтті жіберілді!';
+    error.value = "";
+    message.value = "Форма сәтті жіберілді!";
     modal.value = true;
     const params = {
       first_name: firstName.value,
       second_name: secondName.value,
       visit: visit.value.text
     };
-    emailjs.send('service_ellnze8', 'template_vg9f4xb', params, 'yVKttaYJiGixIKUis')
+    emailjs.send("service_ellnze8", "template_vg9f4xb", params, "yVKttaYJiGixIKUis")
       .then(res => {
-        console.log('success', res.status);
+        console.log("success", res.status);
       });
   }
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
 }
 function close() {
   modal.value = false;
-  error.value = '';
-  message.value = '';
-  firstName.value = '';
-  secondName.value = '';
+  error.value = "";
+  message.value = "";
+  firstName.value = "";
+  secondName.value = "";
   visit.value = null;
-  document.body.style.overflow = 'auto';
+  document.body.style.overflow = "auto";
 }
 </script>
 

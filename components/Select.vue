@@ -23,8 +23,7 @@
 defineProps({
   options: Array,
   error: String,
-  value: Object,
-  action: Function
+  value: Object
 });
 const emit = defineEmits(["select"]);
 

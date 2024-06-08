@@ -12,10 +12,10 @@
 </template>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .location {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  @include container_inner;
   &-title span {
     text-decoration: underline;
   }

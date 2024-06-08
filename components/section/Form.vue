@@ -76,13 +76,13 @@ function close() {
 </script>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .form {
   position: relative;
   padding: 2.875vh 5%;
   &-background {
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include origin;
     width: 100%;
     height: 100%;
     background-color: var(--clr-green);

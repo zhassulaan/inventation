@@ -24,6 +24,8 @@ function closeModal() {
 </script>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .modal {
   position: fixed;
 	top: 0;
@@ -31,32 +33,22 @@ function closeModal() {
 	width: 100vw;
 	height: 100vh;
 	z-index: 3;
-	.background,
-	.body {
-		position: absolute;
-	}
 	.background {
+		@include origin;
 		top: 0;
 		left: 0;
-		width: inherit;
-		height: inherit;
-		background-color: var(--clr-black);
-		opacity: .3;
+		@include background;
 		z-index: 4;
 	}
 	.body {
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		@include center;
 		width: 75%;
 		height: 20%;
 		background-color: var(--clr-white);
 		border-radius: 12px;
 		z-index: 5;
 		&-text {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			@include center_block;
 			width: 80%;
 			height: 100%;
 			font-size: 20px;

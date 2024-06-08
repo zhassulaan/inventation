@@ -14,10 +14,10 @@
 </template>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .time {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  @include container_inner;
   &-image {
     width: 64px;
     height: 64px;

@@ -2,8 +2,8 @@
   <div class="counter">
     <img :src="image" alt="Counter image" />
     <div class="counter-countdown">
-      <span class="counter-countdown__time">{{ time }}</span>
-      <span class="counter-countdown__label">{{ label }}</span>
+      <p class="counter-countdown__time">{{ time }}</p>
+      <p class="counter-countdown__label">{{ label }}</p>
     </div>
   </div>
 </template>

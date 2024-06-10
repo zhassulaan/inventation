@@ -2,6 +2,7 @@
   <vue-scroll-snap :fullscreen="true">
     <img src="@/assets/images/background.jpeg" alt="background" class="background" />
     <img src="@/assets/images/bg_flowers.png" alt="background" class="background" />
+    <Player />
     <Container>
       <section-home />
     </Container>

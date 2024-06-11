@@ -10,9 +10,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { Howl } from 'howler';
-import music from '@/assets/music.mp3';
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import { Howl } from "howler";
+import music from "@/assets/music.mp3";
 
 const isPlaying = ref(false);
 const audio = ref(null);
@@ -38,10 +38,10 @@ function stopAudio() {
 }
 
 onMounted(() => {
-  window.addEventListener('load', playAudio);
+  window.addEventListener("load", playAudio);
 });
 onBeforeUnmount(() => {
-  window.removeEventListener('load', playAudio);
+  window.removeEventListener("load", playAudio);
   if (audio.value) {
     audio.value.unload();
   }
@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
   position: fixed;
   bottom: 10vh;
   right: 10vw;
-  z-index: 5;
+  z-index: 3;
 	&-start,
 	&-stop {
     display: flex;

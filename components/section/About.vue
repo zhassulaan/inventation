@@ -1,6 +1,6 @@
 <template>
-  <div id="about" class="about">
-    <h4>Құрметті қонақтар!</h4>
+  <div class="about">
+    <h3>Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жарандар мен әріптестер!</h3>
     <p class="about-text">Сіз(дер)ді балаларымыз</p>
     <div>
       <h3>Жасұлан</h3>
@@ -18,8 +18,5 @@
 .about {
   position: relative;
   @include container_inner;
-  &-text {
-    font-size: 18px;
-  }
 }
 </style>

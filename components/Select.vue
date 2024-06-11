@@ -1,10 +1,11 @@
 <template>
   <div class="select">
+    <label :for="name" class="select-label" >{{ label }}</label>
     <span
       v-for="option in options"
       :key="option.id"
-      @click="() => selectItem(option)"
       class="select-option"
+      @click="() => selectItem(option)"
     >
       <input
         type="radio"
@@ -21,9 +22,11 @@
 
 <script setup>
 defineProps({
+  name: String,
+  label: String,
   options: Array,
-  error: String,
-  value: Object
+  value: Object,
+  error: String
 });
 const emit = defineEmits(["select"]);
 
@@ -33,20 +36,23 @@ function selectItem(item) {
 </script>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .select {
-  display: flex;
-	flex-direction: column;
-	gap: 1vh;
+  @include col;
+  &-label {
+    @include label;
+  }
   &-option {
-    text-align: start;
     display: flex;
-    gap: 3%;
+    gap: 16px;
+    margin-top: 6px;
     &__input:after,
     &__input:checked:after {
       position: relative;
       content: "";
-      bottom: -2px;
-      left: -2px;
+      bottom: -3px;
+      left: -1px;
       display: inline-block;
       visibility: visible;
       width: 15px;
@@ -59,9 +65,9 @@ function selectItem(item) {
       background-color: var(--clr-white);
     }
     &__input:checked:after {
-      left: 0;
-      width: 9px;
-      height: 9px;
+      left: 4px;
+      width: 5px;
+      height: 5px;
       box-shadow: 0 0 0 2px var(--clr-green), 0 0 0 4px white, 0 0 0 5px var(--clr-green);
     }
     &__error {

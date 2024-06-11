@@ -1,3 +1,7 @@
+@mixin fullpage {
+  width: 100vw;
+  height: 100vh;
+}
 @mixin origin {
   position: absolute;
   top: 0;
@@ -30,4 +34,14 @@
 @mixin border_rad {
   border-radius: 16px;
   overflow: hidden;
+}
+@mixin col {
+  display: flex;
+  flex-direction: column;
+}
+@mixin label {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }

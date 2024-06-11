@@ -3,21 +3,21 @@
     <img src="@/assets/images/background.jpeg" alt="background" class="background" />
     <img src="@/assets/images/bg_flowers.png" alt="background" class="background" />
     <Player />
-    <Container>
+    <Section>
       <section-home />
-    </Container>
-    <Container>
+    </Section>
+    <Section>
       <section-about />
-    </Container>
-    <Container>
+    </Section>
+    <Section>
       <section-time />
-    </Container>
-    <Container>
+    </Section>
+    <Section>
       <section-location />
-    </Container>
-    <Container>
+    </Section>
+    <Section>
       <section-form />
-    </Container>
+    </Section>
   </vue-scroll-snap>
 </template>
 

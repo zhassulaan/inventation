@@ -15,7 +15,7 @@
           v-for="(day, dayIdx) in week"
           :key="dayIdx"
           :class="[
-            isWeekend(dayIdx + 1) ? 'calendar-week__end' : 'calendar-week__day',
+            'calendar-week__day',
             { active: day === activeDay }
           ]"
         >
@@ -88,47 +88,38 @@ function isWeekend(day) {
 .calendar {
 	width: max-content;
   margin: 0 auto;
+  &-header,
+  &-week {
+    display: flex;
+    gap: 16px;
+  }
 	&-header {
 		margin-bottom: 1.9vh;
 		padding-bottom: 1.175vh;
 		border-bottom: 1px solid var(--clr-grey);
-    &__label {
-      color: var(--clr-primary); 
+	}
+  &-week {
+    margin-top: 1.175vh;
+    .active {
+      position: relative;
+      &-icon {
+        position: absolute;
+        top: -25%;
+        left: -25%;
+        width: 150%;
+        height: 150%;
+        color: var(--clr-grey);
+        opacity: .5;
+        z-index: -1;
+        animation: pulse 1.25s infinite;
+      }
     }
-	}
-	&-header,
-	&-week {
-		display: flex;
-		gap: 16px;
-	}
+  }
 	&-header__label,
-	&-week__day,
-	&-week__end {
+	&-week__day {
 		width: 21px;
 		height: 2.5vh;
-	}
-	&-week {
-		margin-top: 1.175vh;
-    &__day {
-      color: var(--clr-blue);
-    }
-    &__end {
-      color: var(--clr-red);
-    }
-		.active {
-			position: relative;
-			&-icon {
-				position: absolute;
-				top: -25%;
-				left: -25%;
-				width: 150%;
-				height: 150%;
-				color: var(--clr-grey);
-				opacity: .5;
-				z-index: -1;
-				animation: pulse 1.25s infinite;
-			}
-		}
+    color: var(--clr-primary);
 	}
 }
 </style>

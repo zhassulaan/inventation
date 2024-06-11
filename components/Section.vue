@@ -8,9 +8,6 @@
 @use "@/assets/styles/mixins" as *;
 
 .item {
-  @include center_block;
-  width: 100vw;
-  height: 100vh;
-  padding: 0 32px;
+  padding: 64px 32px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="home">
+  <div class="home">
     <div class="home-title">
       <h1 id="zh">Ж</h1>
       <h1 id="and">&</h1>
@@ -17,6 +17,7 @@
 @use "@/assets/styles/mixins" as *;
 
 .home {
+  @include fullpage;
   &-title,
   &-subtitle {
     @include center;
@@ -40,8 +41,7 @@
   }
   &-image {
     @include origin;
-    width: 100vw;
-    height: 100vh;
+    @include fullpage;
     &::before,
     &::after {
       @include center;

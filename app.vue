@@ -1,11 +1,8 @@
 <template>
-  <vue-scroll-snap :fullscreen="true">
+  <main>
     <img src="@/assets/images/background.jpeg" alt="background" class="background" />
-    <img src="@/assets/images/bg_flowers.png" alt="background" class="background" />
     <Player />
-    <Section>
-      <section-home />
-    </Section>
+    <section-home />
     <Section>
       <section-about />
     </Section>
@@ -18,9 +15,5 @@
     <Section>
       <section-form />
     </Section>
-  </vue-scroll-snap>
+  </main>
 </template>
-
-<script setup>
-import VueScrollSnap from "vue-scroll-snap";
-</script>

@@ -2,7 +2,6 @@
   <div class="host">
     <h2>Той иелері:</h2>
     <h5>Серік - Ляззат</h5>
-    <Countdown />
   </div>
 </template>
 

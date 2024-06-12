@@ -72,7 +72,6 @@ function close() {
   message.value = "";
   firstName.value = "";
   visit.value = null;
-  document.body.style.overflow = "auto";
 }
 </script>
 

@@ -14,9 +14,12 @@
     <Section>
       <section-location />
     </Section>
-    <img src="@/assets/images/bukety.jpg" alt="Wedding flower" />
     <Section>
       <section-host />
+    </Section>
+    <img src="@/assets/images/bukety.jpg" alt="Wedding flower" />
+    <Section>
+      <section-countdown />
     </Section>
     <Section>
       <section-form />

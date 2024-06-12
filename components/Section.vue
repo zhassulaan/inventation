@@ -8,6 +8,6 @@
 @use "@/assets/styles/mixins" as *;
 
 .item {
-  padding: 64px 32px;
+  padding: 56px 32px;
 }
 </style>

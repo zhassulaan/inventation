@@ -27,7 +27,15 @@ const emit = defineEmits(["closeModal"]);
 
 function closeModal() {
   emit("closeModal");
+	document.body.style.overflow = "auto";
 };
+
+onMounted(() => {
+  document.body.style.overflow = 'hidden';
+});
+onBeforeUnmount(() => {
+  document.body.style.overflow = 'auto';
+});
 </script>
 
 <style scoped lang="scss">

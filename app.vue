@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-if="show">
     <img src="@/assets/images/background.jpeg" alt="Background" class="background" />
     <Player />
     <section-home />
@@ -26,3 +26,15 @@
     </Section>
   </main>
 </template>
+
+<script setup>
+const show = ref(false);
+
+const onLoad = () => {
+  show.value = true;
+};
+
+onMounted(() => {
+  window.addEventListener('load', onLoad);
+});
+</script>

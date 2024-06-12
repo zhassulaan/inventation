@@ -30,9 +30,14 @@
 <script setup>
 const show = ref(false);
 
+const onLoad = () => {
+  show.value = true;
+};
+
 onMounted(() => {
-  window.onload = () => {
-    show.value = true;
-  };
+  window.addEventListener('load', onLoad);
+});
+onUnmounted(() => {
+  window.removeEventListener('load', onLoad);
 });
 </script>

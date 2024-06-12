@@ -23,11 +23,11 @@ import image4 from "@/assets/images/IMG_0691.jpeg";
 
 const options = reactive({
 	allowFullscreen: false,
-	allowToSkipTransition: true,
-	autohideTime: 2500,
-	autoplay: false,
+	allowToSkipTransition: false,
+	autohideTime: 2000,
+	autoplay: true,
 	bindKeys: false,
-	delay: 5000,
+	delay: 2000,
 	enableGestures: false,
 	infinite: true,
 	lazyLoad: true,
@@ -50,23 +50,16 @@ const transitions = shallowReactive([
 
 .vue-flux {
   position: relative;
-  width: 220px;
-  height: 280px;
+  @include fullpage;
   @include border_rad;
   .flux-transition {
     position: absolute;
   }
-  & > .flux-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+  & > .flux-image,
+  .complements {
+    @include origin;
   }
   .complements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,16 +69,18 @@ const transitions = shallowReactive([
     }
   }
   .flux-controls {
+    @include fullpage;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 16px;
     .flux-button {
       padding: 0;
       width: 6%;
-      min-width: 24px;
-      min-height: 24px;
-      max-width: 36px;
-      max-height: 36px;
+      min-width: 36px;
+      min-height: 36px;
+      max-width: 48px;
+      max-height: 48px;
     }
   }
 }
@@ -112,12 +107,12 @@ const transitions = shallowReactive([
     line, polyline, rect, polygon {
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke: white;
+      stroke: var(--clr-white);
       stroke-width: 14;
       fill: none;
     }
     rect, polygon {
-      fill: white;
+      fill: var(--clr-white);
       stroke-width: 0;
     }
   }

@@ -6,6 +6,7 @@
     <Section>
       <section-about />
     </Section>
+    <Album />
     <Section>
       <section-time />
     </Section>

@@ -22,6 +22,7 @@ function playAudio() {
   isPlaying.value = true;
   const sound = new Howl({
     src: [music],
+		loop: true,
     onload: () => {
       sound.seek(audioPosition.value);
       sound.play();

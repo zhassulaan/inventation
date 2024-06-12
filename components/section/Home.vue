@@ -18,6 +18,7 @@
 
 .home {
   @include fullpage;
+  max-width: 768px;
   &-title,
   &-subtitle {
     @include center;
@@ -39,8 +40,9 @@
     top: 90%;
   }
   &-image {
-    @include origin;
+    @include center;
     @include fullpage;
+    max-width: 768px;
     &::before,
     &::after {
       @include center;
@@ -50,8 +52,8 @@
     }
     &::after {
       content: "";
-      width: calc(100vw - 28px);
-      height: calc(100vh - 28px);
+      width: calc(100% - 28px);
+      height: calc(100% - 28px);
       border: 1.5px solid var(--clr-border);
       border-radius: 12px;
     }

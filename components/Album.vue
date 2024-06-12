@@ -36,7 +36,9 @@ const autoplay = {
 @use "@/assets/styles/mixins" as *;
 
 .swiper {
-  @include fullpage;
+  width: 100%;
+  max-width: 768px;
+  height: 75vh;
   @include border_rad;
   &-slide {
     visibility: hidden;

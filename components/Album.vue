@@ -6,7 +6,6 @@
     :navigation="true"
     :loop="true"
     effect="fade"
-    class="album"
   >
     <SwiperSlide v-for="(image, index) in images" :key="index">
       <img :src="image" :alt="`Slide ${index + 1}`" />
@@ -37,8 +36,14 @@ const autoplay = {
 <style lang="scss">
 @use "@/assets/styles/mixins" as *;
 
-.album {
+.swiper {
   @include fullpage;
   @include border_rad;
+  &-slide {
+    visibility: hidden;
+    &-active {
+      visibility: visible;
+    }
+  }
 }
 </style>

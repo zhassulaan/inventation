@@ -6,14 +6,20 @@
     <div v-else class="player-start" @click="playAudio">
       <span class="player-start__icon"></span>
     </div>
-  </div>
+	</div>
+	<Modal
+		v-if="modal"
+		text="Әуенді қосу!"
+		:alert="true"
+		@closeModal="playAudio; modal = false"
+	/>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
 import { Howl } from "howler";
 import music from "@/assets/music.mp3";
 
+const modal = ref(true);
 const isPlaying = ref(false);
 const audio = ref(null);
 const audioPosition = ref(0);
@@ -38,10 +44,10 @@ function stopAudio() {
 }
 
 onMounted(() => {
-  window.addEventListener("load", playAudio);
+  playAudio();
 });
+
 onBeforeUnmount(() => {
-  window.removeEventListener("load", playAudio);
   if (audio.value) {
     audio.value.unload();
   }

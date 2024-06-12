@@ -1,7 +1,10 @@
 <template>
   <div class="location">
     <h2>Мекен - жайымыз:</h2>
-    <h6 class="location-title"><span>"Той сарайы"</span> мейрамханасы, Атырау қ.</h6>
+    <div>
+      <h6><span>"Той сарайы"</span> мейрамханасы,</h6>
+      <h6>Атырау қ.</h6>
+    </div>
     <a href="https://go.2gis.com/h727u">
       <img src="@/assets/images/2gis.png" alt="2Gis" class="location-icon" />
     </a>
@@ -16,7 +19,8 @@
 
 .location {
   @include container_inner;
-  &-title span {
+  align-items: center;
+  span {
     text-decoration: underline;
   }
   &-icon {

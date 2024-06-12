@@ -2,7 +2,7 @@
   <div class="form">
     <div>
       <h5>Тойға қатысуыңызды растауыңызды сұраймыз:</h5>
-      <p id="red" class="form-text">Тіркелуші қонақтың жасы 16-дан жоғары болуы тиіс</p>
+      <p class="form-text red">Тіркелуші қонақтың жасы 16-дан жоғары болуы тиіс</p>
     </div>
 
     <Input
@@ -23,7 +23,8 @@
 
     <div>
       <Button text="Жіберу" @click="submit" />
-      <p class="form-text">Қонақ санын нақты есептей алуымыз үшін анкетаны бір-ақ рет толтырыңызды сұраймыз!</p>
+      <p id="alert" class="form-text red">Тойға баласыз келуіңізді сұраймыз! Орын саны шектеулі!</p>
+      <p class="form-text">Қонақ санын нақты есептей алуымыз үшін анкетаны бір-ақ рет толтырыңыз!</p>
     </div>
     <Modal v-if="modal" :text="message" :error_text="error" @closeModal="close" />
   </div>
@@ -85,8 +86,12 @@ function close() {
     font-size: 12px;
     text-decoration: underline;
     margin-top: 6px;
-    &#red {
+    &.red {
       color: var(--clr-red);
+    }
+    &#alert {
+      font-size: 16px;
+      margin-top: 12px;
     }
   }
 }

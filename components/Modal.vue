@@ -2,7 +2,11 @@
   <div class="modal">
     <div class="modal-background" @click="closeModal"></div>
 
-    <div class="modal-body">
+    <div v-if="alert" class="modal-body">
+			<Button :text="text" @click="closeModal" />
+    </div>
+
+    <div v-else class="modal-body">
       <div class="close" @click="closeModal">
         <span class="close-icon"></span>
       </div>
@@ -16,7 +20,8 @@
 <script setup>
 defineProps({
   text: String,
-  error_text: String
+  error_text: String,
+  alert: Boolean
 });
 const emit = defineEmits(["closeModal"]);
 
@@ -75,6 +80,11 @@ function closeModal() {
 					transform: rotate(-90deg) translate(8px, 0);
 				}
 			}
+		}
+		.button {
+			@include center;
+			width: 60%;
+			margin: auto;
 		}
 		.text {
 			@include center_block;

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <img src="@/assets/images/background.jpeg" alt="background" class="background" />
+    <img src="@/assets/images/background.jpeg" alt="Background" class="background" />
     <Player />
     <section-home />
     <Section>
@@ -13,6 +13,10 @@
     <Album />
     <Section>
       <section-location />
+    </Section>
+    <img src="@/assets/images/bukety.jpg" alt="Wedding flower" />
+    <Section>
+      <section-host />
     </Section>
     <Section>
       <section-form />

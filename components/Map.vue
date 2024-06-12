@@ -10,12 +10,13 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .map {
-	width: calc(100% - 4px);
-	height: 25vh;
-	border: 2px solid var(--clr-border);
-  border-radius: 16px;
-  overflow: hidden;
+	width: 100%;
+	height: 240px;
+	border: 1px solid var(--clr-border);
+  @include border_rad;
 }
 </style>

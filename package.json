@@ -16,8 +16,8 @@
     "emailjs-com": "^3.2.0",
     "howler": "^2.2.4",
     "nuxt": "^3.11.2",
+    "swiper": "^8.4.7",
     "vue": "^3.4.27",
-    "vue-flux": "^7.0.0-beta.6",
     "vue-router": "^4.3.2",
     "vue-scroll-snap": "^0.1.11"
   },

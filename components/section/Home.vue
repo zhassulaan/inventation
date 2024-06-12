@@ -5,7 +5,7 @@
       <h1 id="and">&</h1>
       <h1 id="d">Д</h1>
     </div>
-    <h3 class="home-subtitle">27.07.2024</h3>
+    <h4 class="home-subtitle">27.07.2024</h4>
 
     <div class="home-image">
       <img src="@/assets/images/IMG_0655.jpeg" alt="Main image" />
@@ -22,7 +22,6 @@
   &-subtitle {
     @include center;
     z-index: 2;
-    color: var(--clr-white);
   }
   &-title {
     width: 320px;

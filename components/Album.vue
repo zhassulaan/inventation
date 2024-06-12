@@ -81,39 +81,36 @@ const transitions = shallowReactive([
       min-height: 36px;
       max-width: 48px;
       max-height: 48px;
-    }
-  }
-}
-
-.flux-button {
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-  &:hover {
-    > svg {
-      line, polyline {
-        stroke: yellow;
+      border: 0;
+      cursor: pointer;
+      background-color: transparent;
+      &:hover {
+        > svg {
+          line, polyline {
+            stroke: yellow;
+          }
+          rect, polygon {
+            fill: yellow;
+          }
+        }
       }
-      rect, polygon {
-        fill: yellow;
+      > svg {
+        width: 100%;
+        > circle {
+          fill: rgba(0, 0, 0, 0.7);
+        }
+        line, polyline, rect, polygon {
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke: var(--clr-white);
+          stroke-width: 14;
+          fill: none;
+        }
+        rect, polygon {
+          fill: var(--clr-white);
+          stroke-width: 0;
+        }
       }
-    }
-  }
-  > svg {
-    width: 100%;
-    > circle {
-      fill: rgba(0, 0, 0, 0.7);
-    }
-    line, polyline, rect, polygon {
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke: var(--clr-white);
-      stroke-width: 14;
-      fill: none;
-    }
-    rect, polygon {
-      fill: var(--clr-white);
-      stroke-width: 0;
     }
   }
 }

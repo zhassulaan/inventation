@@ -31,7 +31,6 @@
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 
 library.add(faHeart);
 
@@ -59,13 +58,11 @@ const calendar = computed(() => {
   weeks.push(week);
   return weeks;
 });
-
-function isWeekend(day) {
-  return day === 6 || day === 7;
-}
 </script>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 @keyframes pulse {
   0% {
 		top: -25%;
@@ -86,7 +83,6 @@ function isWeekend(day) {
 }
 
 .calendar {
-	width: max-content;
   margin: 0 auto;
   &-header,
   &-week {
@@ -94,22 +90,23 @@ function isWeekend(day) {
     gap: 16px;
   }
 	&-header {
-		margin-bottom: 1.9vh;
-		padding-bottom: 1.175vh;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
 		border-bottom: 1px solid var(--clr-grey);
 	}
   &-week {
-    margin-top: 1.175vh;
+    margin-top: 16px;
+    &__day {
+      @include center_block;
+      &.active {
+        color: var(--clr-white);
+      }
+    }
     .active {
       position: relative;
       &-icon {
         position: absolute;
-        top: -25%;
-        left: -25%;
-        width: 150%;
-        height: 150%;
-        color: var(--clr-grey);
-        opacity: .5;
+        color: var(--clr-gold);
         z-index: -1;
         animation: pulse 1.25s infinite;
       }
@@ -118,7 +115,6 @@ function isWeekend(day) {
 	&-header__label,
 	&-week__day {
 		width: 21px;
-		height: 2.5vh;
     color: var(--clr-primary);
 	}
 }

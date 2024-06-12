@@ -31,16 +31,8 @@
 const show = ref(false);
 
 onMounted(() => {
-  if (document.readyState === 'complete') {
+  window.onload = () => {
     show.value = true;
-  } else {
-    document.querySelector("body").style.visibility = "hidden";
-    document.onreadystatechange = function() {
-      if (document.readyState === "complete") {
-        document.querySelector("body").style.visibility = "visible";
-        show.value = true;
-      }
-    }
-  }
+  };
 });
 </script>

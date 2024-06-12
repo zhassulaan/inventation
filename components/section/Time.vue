@@ -1,9 +1,9 @@
 <template>
   <div class="time">
+    <h2>Той салтанаты:</h2>
     <div>
-      <h2>Той салтанаты:</h2>
-      <h5>27 шілде 2024</h5>
-      <h5 class="time-date">19:00</h5>
+      <p class="time-date">27 шілде 2024</p>
+      <p class="time-date">19:00</p>
     </div>
     <Calendar />
   </div>
@@ -14,24 +14,26 @@
 
 .time {
   @include container_inner;
-  &-image {
-    width: 64px;
-    height: 64px;
-  }
   &-date {
-    position: relative;
-    width: fit-content;
-    margin: 0 auto;
-    &::before,
-    &::after {
-      @include line;
-      width: 64px;
+    &:first-child {
+      text-transform: uppercase;
     }
-    &::before {
-      left: -150%;
-    }
-    &::after {
-      right: -150%;
+    &:last-child {
+      position: relative;
+      width: fit-content;
+      margin: 8px auto 0;
+      &::before,
+      &::after {
+        @include line;
+        width: 64px;
+        height: 1.5px;
+      }
+      &::before {
+        left: -175%;
+      }
+      &::after {
+        right: -175%;
+      }
     }
   }
 }

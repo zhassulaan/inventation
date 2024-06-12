@@ -31,7 +31,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
 import { getTimeDifference } from "@/utils/date";
 import costume from "@/assets/images/costume.jpg"
 import rings from "@/assets/images/rings.jpg"

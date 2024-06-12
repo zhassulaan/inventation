@@ -53,6 +53,8 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped lang="scss">
+@use "@/assets/styles/mixins" as *;
+
 .player {
   position: fixed;
   bottom: 10vh;
@@ -60,9 +62,7 @@ onBeforeUnmount(() => {
   z-index: 3;
 	&-start,
 	&-stop {
-    display: flex;
-		justify-content: center;
-		align-items: center;
+		@include center_block;
 		width: 40px;
 		height: 40px;
 		background-color: var(--clr-black);

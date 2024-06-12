@@ -31,11 +31,8 @@ defineProps({
     background-color: var(--clr-black);
   }
   &-countdown {
-    position: absolute;
-    bottom: 0;
     @include center;
-    display: flex;
-    flex-direction: column;
+    @include col;
     z-index: 2;
     &__time,
     &__label {

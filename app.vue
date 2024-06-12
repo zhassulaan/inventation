@@ -6,10 +6,11 @@
     <Section>
       <section-about />
     </Section>
-    <Album />
+    <Border />
     <Section>
       <section-time />
     </Section>
+    <Album />
     <Section>
       <section-location />
     </Section>

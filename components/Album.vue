@@ -1,6 +1,6 @@
 <template>
   <Swiper
-    :modules="[Autoplay, Navigation, Pagination, EffectFade]"
+    :modules="[Autoplay, Navigation, EffectFade]"
     :spaceBetween="30"
     :autoplay="autoplay"
     :navigation="true"
@@ -14,9 +14,8 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Autoplay, Navigation, Pagination, EffectFade } from "swiper";
+import { Autoplay, Navigation, EffectFade } from "swiper";
 import image1 from "@/assets/images/IMG_0688.jpeg";
 import image2 from "@/assets/images/IMG_0689.jpeg";
 import image3 from "@/assets/images/IMG_0690.jpeg";
@@ -24,7 +23,7 @@ import image4 from "@/assets/images/IMG_0691.jpeg";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 const images = ref([image1, image2, image3, image4]);
 const autoplay = {

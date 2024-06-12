@@ -47,28 +47,31 @@ function selectItem(item) {
     display: flex;
     gap: 16px;
     margin-top: 6px;
-    &__input:after,
-    &__input:checked:after {
-      position: relative;
-      content: "";
-      bottom: -3px;
-      left: -1px;
-      display: inline-block;
-      visibility: visible;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      border: 1px solid var(--clr-green);
-      padding: 1px;
-    }
-    &__input:after {
-      background-color: var(--clr-white);
-    }
-    &__input:checked:after {
-      left: 4px;
-      width: 5px;
-      height: 5px;
-      box-shadow: 0 0 0 2px var(--clr-green), 0 0 0 4px white, 0 0 0 5px var(--clr-green);
+    &__input {
+      visibility: hidden;
+      &:after,
+      &:checked:after {
+        position: relative;
+        content: "";
+        bottom: -3px;
+        left: -1px;
+        display: inline-block;
+        visibility: visible;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid var(--clr-green);
+        padding: 1px;
+      }
+      &:after {
+        background-color: var(--clr-white);
+      }
+      &:checked:after {
+        left: 4px;
+        width: 5px;
+        height: 5px;
+        box-shadow: 0 0 0 2px var(--clr-green), 0 0 0 4px white, 0 0 0 5px var(--clr-green);
+      }
     }
     &__error {
       color: var(--clr-red);

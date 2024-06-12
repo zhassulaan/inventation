@@ -1,9 +1,9 @@
 <template>
-  <div id="location" class="location">
+  <div class="location">
     <h2>Мекен - жайымыз:</h2>
-    <h5 class="location-title"><span>"Той сарайы"</span> мейрамханасы, Атырау қ.</h5>
+    <h6 class="location-title"><span>"Той сарайы"</span> мейрамханасы, Атырау қ.</h6>
     <a href="https://go.2gis.com/h727u">
-      <img src="@/assets/images/2gis.png" alt="Map" class="location-icon" />
+      <img src="@/assets/images/2gis.png" alt="2Gis" class="location-icon" />
     </a>
     <a href="https://go.2gis.com/h727u">
       <Map />

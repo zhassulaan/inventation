@@ -2,8 +2,8 @@
   <div class="time">
     <h2>Той салтанаты:</h2>
     <div>
-      <p class="time-date">27 шілде 2024</p>
-      <p class="time-date">19:00</p>
+      <h6 class="time-date">27 шілде 2024</h6>
+      <h6 class="time-date">19:00</h6>
     </div>
     <Calendar />
   </div>

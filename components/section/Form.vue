@@ -14,7 +14,6 @@
       :error="error"
       @input="e => firstName = e.target.value"
     />
-    </Motion>
     <Select
       name="visit"
       label="Тойға келесіз бе?"

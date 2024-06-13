@@ -5,9 +5,9 @@
       <Motion is="h6" class="time-date" preset="fadeVisible" :duration="750">27 шілде 2024</Motion>
       <Motion is="h6" class="time-date" preset="fadeVisible" :duration="750">19:00</Motion>
       </div>
-    <Motion is="div" preset="fadeVisible" :duration="750">
+    <MotionGroup preset="fadeVisible" :duration="750">
       <Calendar />
-    </Motion>
+    </MotionGroup>
   </div>
 </template>
 

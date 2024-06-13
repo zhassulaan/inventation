@@ -7,25 +7,22 @@
       </MotionGroup>
     </div>
 
-    <MotionGroup preset="fadeVisible" :duration="750">
-      <Input
-        name="first_fullname"
-        label="Аты-жөніңіз"
-        :value="firstName"
-        :error="error"
-        @input="e => firstName = e.target.value"
-      />
-    </MotionGroup>
-    <MotionGroup preset="fadeVisible" :duration="750">
-      <Select
-        name="visit"
-        label="Тойға келесіз бе?"
-        :options="visitOptions"
-        :value="visit"
-        :error="error"
-        @select="setVisit"
-      />
-    </MotionGroup>
+    <Input
+      name="first_fullname"
+      label="Аты-жөніңіз"
+      :value="firstName"
+      :error="error"
+      @input="e => firstName = e.target.value"
+    />
+    </Motion>
+    <Select
+      name="visit"
+      label="Тойға келесіз бе?"
+      :options="visitOptions"
+      :value="visit"
+      :error="error"
+      @select="setVisit"
+    />
 
     <div>
       <MotionGroup preset="fadeVisible" :duration="750">

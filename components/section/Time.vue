@@ -1,13 +1,13 @@
 <template>
   <div class="time">
-    <MotionGroup preset="fadeVisible" :duration="750">
-      <h2>Той салтанаты:</h2>
-      <div>
-        <h6 class="time-date">27 шілде 2024</h6>
-        <h6 class="time-date">19:00</h6>
+    <Motion is="h2" preset="fadeVisible" :duration="750">Той салтанаты:</Motion>
+    <div>
+      <Motion is="h6" class="time-date" preset="fadeVisible" :duration="750">27 шілде 2024</Motion>
+      <Motion is="h6" class="time-date" preset="fadeVisible" :duration="750">19:00</Motion>
       </div>
+    <Motion is="div" preset="fadeVisible" :duration="750">
       <Calendar />
-    </MotionGroup>
+    </Motion>
   </div>
 </template>
 

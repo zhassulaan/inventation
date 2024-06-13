@@ -1,30 +1,36 @@
 <template>
   <div class="form">
     <div>
-      <h5>Тойға қатысуыңызды растауыңызды сұраймыз:</h5>
-      <p class="form-text red">Тіркелуші қонақтың жасы 16-дан жоғары болуы тиіс</p>
+      <MotionGroup preset="fadeVisible" :duration="750">
+        <h5>Тойға қатысуыңызды растауыңызды сұраймыз:</h5>
+        <p class="form-text red">Тіркелуші қонақтың жасы 16-дан жоғары болуы тиіс</p>
+      </MotionGroup>
     </div>
 
-    <Input
-      name="first_fullname"
-      label="Аты-жөніңіз"
-      :value="firstName"
-      :error="error"
-      @input="e => firstName = e.target.value"
-    />
-    <Select
-      name="visit"
-      label="Тойға келесіз бе?"
-      :options="visitOptions"
-      :value="visit"
-      :error="error"
-      @select="setVisit"
-    />
+    <MotionGroup preset="fadeVisible" :duration="750">
+      <Input
+        name="first_fullname"
+        label="Аты-жөніңіз"
+        :value="firstName"
+        :error="error"
+        @input="e => firstName = e.target.value"
+      />
+      <Select
+        name="visit"
+        label="Тойға келесіз бе?"
+        :options="visitOptions"
+        :value="visit"
+        :error="error"
+        @select="setVisit"
+      />
+    </MotionGroup>
 
     <div>
-      <Button text="Жіберу" @click="submit" />
-      <p id="alert" class="form-text red">Тойға баласыз келуіңізді сұраймыз! Орын саны шектеулі!</p>
-      <p class="form-text">Қонақ санын нақты есептей алуымыз үшін анкетаны бір-ақ рет толтырыңыз!</p>
+      <MotionGroup preset="fadeVisible" :duration="750">
+        <Button text="Жіберу" @click="submit" />
+        <p id="alert" class="form-text red">Тойға баласыз келуіңізді сұраймыз! Орын саны шектеулі!</p>
+        <p class="form-text">Қонақ санын нақты есептей алуымыз үшін анкетаны бір-ақ рет толтырыңыз!</p>
+      </MotionGroup>
     </div>
     <Modal v-if="modal" :text="message" :error_text="error" @closeModal="close" />
   </div>

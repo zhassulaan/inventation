@@ -1,7 +1,9 @@
 <template>
   <div class="host">
-    <h2>Той иелері:</h2>
-    <h5>Серік - Ляззат</h5>
+    <MotionGroup preset="slideVisibleBottom" :duration="750">
+      <h2>Той иелері:</h2>
+      <h5>Серік - Ляззат</h5>
+    </MotionGroup>
   </div>
 </template>
 

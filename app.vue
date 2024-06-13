@@ -1,7 +1,6 @@
 <template>
   <main>
     <img src="@/assets/images/background.jpeg" alt="Background" class="background" />
-    <MotionGroup preset="popVisible" :duration="300">
       <Player />
       <section-home />
       <Section>
@@ -11,20 +10,23 @@
       <Section>
         <section-time />
       </Section>
-      <Album />
+      <Motion is="p" preset="fadeVisible" :duration="750">
+        <Album />
+      </Motion>
       <Section>
         <section-location />
       </Section>
       <Section>
         <section-host />
       </Section>
-      <img src="@/assets/images/bukety.jpg" alt="Wedding flower" />
+      <Motion is="p" preset="fadeVisible" :duration="750">
+        <img src="@/assets/images/bukety.jpg" alt="Wedding flower" />
+      </Motion>
       <Section>
         <section-countdown />
       </Section>
       <Section>
         <section-form />
       </Section>
-    </MotionGroup>
   </main>
 </template>

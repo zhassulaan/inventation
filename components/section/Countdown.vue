@@ -1,6 +1,6 @@
 <template>
   <div class="countdown">
-    <h5>Той салтанатына дейін:</h5>
+    <Motion is="h5" preset="slideVisibleLeft" :duration="750">Той салтанатына дейін:</Motion>
     <div class="countdown-body">
       <Counter
         v-if="hydrated"

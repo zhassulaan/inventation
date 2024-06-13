@@ -15,6 +15,8 @@
         :error="error"
         @input="e => firstName = e.target.value"
       />
+    </MotionGroup>
+    <MotionGroup preset="fadeVisible" :duration="750">
       <Select
         name="visit"
         label="Тойға келесіз бе?"
